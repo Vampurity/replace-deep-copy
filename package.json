@@ -1,0 +1,32 @@
+{
+  "name": "@vampurity/replace-deep-copy",
+  "version": "1.0.0",
+  "description": "Replace JSON.parse(JSON.stringify()) with structuredClone",
+  "main": "index.js",
+  "bin": {
+    "replace-deep-copy": "./bin/cli.js"
+  },
+  "scripts": {
+    "test": "node --no-warnings bin/cli.js test --dry-run"
+  },
+  "repository" : {
+    "type" : "git",
+    "url": "ssh://git@github.com/OWNER/REPOSITORY.git",
+    "directory": "packages/name"
+  },
+  "publishConfig": {
+    "registry":"https://npm.pkg.github.com/"
+  },
+  "keywords": ["json", "clone", "structuredClone", "refactor"],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.13.0",
+  "dependencies": {
+    "@babel/core": "^7.28.0",
+    "@babel/generator": "^7.28.0",
+    "@babel/parser": "^7.28.0",
+    "@babel/traverse": "^7.28.0",
+    "commander": "^14.0.0",
+    "globby": "^14.1.0"
+  }
+}
